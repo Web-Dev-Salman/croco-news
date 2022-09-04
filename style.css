@@ -1,0 +1,226 @@
+body {
+    background-color: #f0f0f0;
+}
+img {
+    width: 100%;
+}
+.logo {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.logo span {
+    background-color: blueviolet;
+    line-height: 1.5;
+    padding: 4px 8px 8px 8px;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+hr {
+  margin: 0;
+  margin-top: 5px;
+}
+
+
+/* -----------main-heading------------- */
+#main-heading {
+    padding: 10px 0 15px 0;
+    background-color: white;
+}
+/* ----------footer----------- */
+.copyright {
+    font-size: .8rem;
+}
+.first-menu-nav {
+    flex-direction: row !important;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom:0;
+    margin-bottom: 4px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-right: 0 !important;
+}
+
+/* --------news-card----------- */
+.card {
+    padding: 20px;
+}
+.card-img-top {
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* -------------inf0------------ */
+.info {
+    align-items: center;
+    padding: 0 10px;
+    margin: 0;
+}
+/* ------------author---------- */
+.author-image {
+    max-width: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #222222;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.author-image img {
+    width: 100%;
+}
+.author-info h5 , 
+.author-info p,
+.rating h5 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.author-box .row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.rating {
+    text-align: center;
+}
+.readmore {
+    text-align: end;
+}
+
+
+@media (max-width:1025px) {
+    .nav-link {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    .info {
+        padding: 0 0;
+        margin: 0;
+    }
+    .author-image {
+        max-width: 40px;;
+        width: 40px;
+        height: 40px;
+    }
+    .author-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .rating {
+        width: 60%;
+        text-align: left;
+        padding: 0;
+    }
+    .readmore {
+        width: 40%;
+    }
+}
+@media (max-width:768px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .card-body {
+        padding: 20px 30px;
+    }
+}
+
+@media (min-width:992px) {
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+}
+
+/* spinner--------------------- */
+#spinner-container {
+    min-height: 70vh;
+}
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: rgb(71, 54, 228);
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .d-none {
+    display: none !important;
+  }
